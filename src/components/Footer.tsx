@@ -5,13 +5,13 @@ import { Filter } from '../utils/enums';
 
 type Props = {
   numberOfTodos: number | undefined;
-  isCompletedTodos: boolean;
+  hasCompletedTodos: boolean;
   onRemove(): void;
 };
 
 export const Footer: React.FC<Props> = ({
   numberOfTodos,
-  isCompletedTodos,
+  hasCompletedTodos,
   onRemove,
 }) => {
   return (
@@ -65,7 +65,7 @@ export const Footer: React.FC<Props> = ({
         </li>
       </ul>
 
-      {isCompletedTodos && (
+      {hasCompletedTodos && (
         <button
           type="button"
           className="clear-completed"
