@@ -1,11 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
+import './styles/index.css';
+import './styles/todo-list.css';
+import './styles/filters.css';
+
 import { App } from './App';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Routes>
+      <Route path="/">
+        <Route index element={<App />} />
+        <Route path=":filter" element={<App />} />
+      </Route>
+    </Routes>
+  </Router>,
   document.getElementById('root'),
 );
