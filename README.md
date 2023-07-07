@@ -11,7 +11,7 @@ npm install
 # serve at localhost:3000
 npm start
 ```
-####[You can view it here](https://yana-kotsulym.github.io/react-todo-app/)
+### You can view React Todo App [here](https://yana-kotsulym.github.io/react-todo-app/)
 ### Technologies
 - React
 - CSS
